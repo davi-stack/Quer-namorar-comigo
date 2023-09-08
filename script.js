@@ -1,4 +1,5 @@
 const naoButton = document.getElementById('naoButton');
+const simButton = document.getElementById('simButton');
 
 naoButton.addEventListener('mouseenter', () => {
     moveButtonRandomly();
@@ -24,3 +25,12 @@ naoButton.addEventListener('mouseleave', () => {
     naoButton.style.transition = 'transform 0.5s ease-in-out';
 });
 
+simButton.addEventListener('click', () => {
+    // Adicione aqui a animação desejada para o botão "Sim"
+    simButton.style.animation = 'scaleUp 0.5s';
+
+    // Reset a animação após um curto período de tempo
+    setTimeout(() => {
+        simButton.style.animation = '';
+    }, 500);
+});
