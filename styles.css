@@ -6,6 +6,19 @@ body {
     margin: 0;
     background-color: #f0f0f0;
 }
+@keyframes scaleUp {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+.button-animation {
+    animation: scaleUp 0.5s;
+}
+
 
 .container {
     text-align: center;
