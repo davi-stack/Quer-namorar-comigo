@@ -26,11 +26,8 @@ naoButton.addEventListener('mouseleave', () => {
 });
 
 simButton.addEventListener('click', () => {
-    // Adicione aqui a animação desejada para o botão "Sim"
-    simButton.style.animation = 'scaleUp 0.5s';
-
-    // Reset a animação após um curto período de tempo
+    simButton.classList.add('button-animation');
     setTimeout(() => {
-        simButton.style.animation = '';
+        simButton.classList.remove('button-animation');
     }, 500);
 });
