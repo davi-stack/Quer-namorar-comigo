@@ -1,5 +1,6 @@
 const naoButton = document.getElementById('naoButton');
 const simButton = document.getElementById('simButton');
+const mensagem = document.getElementById('mensagem');
 
 naoButton.addEventListener('mouseenter', () => {
     moveButtonRandomly();
@@ -29,5 +30,7 @@ simButton.addEventListener('click', () => {
     simButton.classList.add('button-animation');
     setTimeout(() => {
         simButton.classList.remove('button-animation');
+        mensagem.textContent = 'Parabéns pela sua escolha, você vai ser muito feliz!';
+        mensagem.classList.remove('hidden');
     }, 500);
 });
